@@ -5,40 +5,79 @@
     background-color: #ffcc99;
     }
     h1 {
-      font-family: Arial, Helvetica, sans-serif;  
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;  
     }
 
     h2 {
         opacity: 0.8;
         font-family:Arial, Helvetica, sans-serif;
         display: inline-block;
+        text-align: center;
     }
 
     h3 {
         opacity: 1;
         font-family:Arial, Helvetica, sans-serif;
         display: inline-block;
+        text-align: center;
     }
-  .button {
+
+
+  button {
     border: none;
-    color: "#e600e6";
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 34px;
-    margin: 4px 2px;
+    background-color: #ffcc99;
+     padding: 0px 10px;
     cursor: pointer;
     }
+
+
     underneathtext {
               opacity: 0.78;
         font-family:Arial, Helvetica, sans-serif;
         display: inline-block;
     }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6699ff;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+.active {
+  background-color: #04AA6D;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+/* li:last-child {
+  border-right: none;
+} */
+
     .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  border-radius: 5px; 
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -116,38 +155,67 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   </head>
   <body>
+   <!-- Shortcuts -->
+ <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#aboutme">About Me</a></li>
+  <li><a href="#education">Education</a></li>
+  <li><a href="#personalprojects">Personal Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+
     <!-- Main Banner -->
+    <div id="home"> 
+      <!-- <img src="empty.png" width="10%" height="50%")>  -->
+
     <img src="sherrin_banner.jpg" width="100%" height="50%")> 
 <p style="text-align: center;" data-aos="fade-right" class="aos-init">
 <center>
   <img src="https://img.icons8.com/ios/250/000000/handshake.png" height="50"> <h2>Hi, I’m Jassherrin</h2>
+</div>
 
-<!-- Shortcuts -->
- <p style="text-align: center;" data-aos="fade-right" class="aos-init">
-  <center>
-<button type="button"><a href="#aboutme">About me</a></button>   </center>
-<p>
- <p style="text-align: center;" data-aos="fade-left" class="aos-init">
-  <center>
-<button type="button"><a href="#skills">Personal Skills</a></button>   </center>
+
+
+ 
+
+  <!-- <p style="text-align: center;" data-aos="fade-right" class="aos-init">
+  <center> -->
+
+    
+<!-- <button type="button"><a href="#aboutme">About me</a></button>   </center>
+<!-- <p> -->
+ <!-- <p style="text-align: center;" data-aos="fade-left" class="aos-init">
+  <center> --> 
+<!-- <button type="button"><a href="#skills">Personal Skills</a></button>   </center>
 <p>
  <p style="text-align: center;" data-aos="fade-left" class="aos-init">
 
   <center>
-<button type="button"><a href="#achivements">Achivements</a></button></center>
- <p style="text-align: center;" data-aos="fade-left" class="aos-init">
-    <center>
-<button type="button"><a href="#education" >Education Background</a></button> </center>
- <p style="text-align: center;" data-aos="fade-right" class="aos-init">
-  <center>
-<button type="button"><a href="#work" >Work Background and Projects</a></button> </center>
-<p>
-    <center>
-<button type="button"><a href="#personalprojects">Personal Projects</a></button>   </center>
- <p style="text-align: center;" data-aos="fade-right" class="aos-init">
-     <center>
-<button type="button"><a href="#contact">Contact, resume & Other links</a></button>   </center>
- <p style="text-align: center;" data-aos="fade-right" class="aos-init">
+<button type="button"><a href="#achivements">Achivements</a></button></center> --->
+
+
+ <!-- <p style="text-align: center;" data-aos="fade-left" class="aos-init"> 
+    <center>  -->
+      <!-- <button onclick="myFunction()"><a href="#education"><img src="education.png" width="30%" height="30%"></a></button>  -->
+
+
+<!-- <button type="button"><a href="#education" >Education Background</a></button> </center>
+ <!-- <p style="text-align: center;" data-aos="fade-right" class="aos-init"> --> 
+  <!-- <center> -->
+<!-- <button type="button"><a href="#work" >Work Background and Projects</a></button> </center>
+<p> -->
+  
+    <!-- <center> -->
+            <!-- <button onclick="myFunction()"><a href="#personalprojects"><img src="personalprojects.png" width="30%" height="30%"></a></button>  -->
+<!-- <button type="button"><a href="#personalprojects">Personal Projects</a></button>   </center> -->
+ <!-- <p style="text-align: center;" data-aos="fade-right" class="aos-init">
+     <center> -->
+             <!-- <button onclick="myFunction()"><a href="#contact"><img src="conact.png" width="30%" height="30%"></a></button>  -->
+<!-- <button type="button"><a href="#contact">Contact, resume & Other links</a></button>   </center> -->
+ <!-- <p style="text-align: center;" data-aos="fade-right" class="aos-init"> -->
+
+
 
 <!-- Embedding Spotify -->
  <p style="text-align: center;" data-aos="fade-right" class="aos-init">
@@ -164,8 +232,14 @@
 
     <div class="about-area section-padding" id="aboutme">
         <div class="container">
+          <img src="empty.png" width="10%" height="50%")> 
+                    <!-- <button onclick="myFunction()"><a href="#aboutme"><img src="aboutme.png" width="30%" height="30%"></a></button> -->
+          <p style="text-align: center;" data-aos="fade-up" >
 
-            <h1 style="text-align: center;" data-aos="fade-up" class="aos-init">About me</h1>
+          <a href="#aboutme"><img src="aboutme.png" width="40%" height="30%"></a>
+          </p>
+
+            <!-- <h1 style="text-align: center;" data-aos="fade-up" class="aos-init">About me</h1> -->
             <div class="row">
 
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 aos-init" data-aos="fade-right">
@@ -199,13 +273,18 @@
 
     <div class="about-area section-padding" id="education">
         <div class="container">
+          <img src="empty.png" width="10%" height="50%")> 
+          <p style="text-align: center;" data-aos="fade-up" >
 
-            <h1 style="text-align: center;" data-aos="fade-up" class="aos-init">Education</h1>
+          <a href="#education"><img src="education.png" width="40%" height="30%"></a>
+          </p>
+
+            <!-- <h1 style="text-align: center;" data-aos="fade-up" class="aos-init">Education</h1> -->
             <div class="row">
 
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 aos-init" data-aos="fade-right">
-                    
-                    <img src="RP.png" class="img-responsive" alt="about image" width="70%" height="20%"> 
+                    <p style="text-align: center;" data-aos="fade-right" class="aos-init">
+                    <img src="RP.png" class="img-responsive" alt="about image" width="50%" height="20%"> 
                 </div>
 
                 <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8 aos-init" data-aos="fade-left">
@@ -258,12 +337,26 @@
 
 <!-- Personal Prjects Section -->
 <div id="personalprojects">
-  <h1 style="text-align: center;" data-aos="fade-left" class="aos-init">Personal Projects</h1>
-   <h1 style="text-align: center;" data-aos="fade-right" class="aos-init">Sunset Yellow</h1>  
+            <img src="empty.png" width="10%" height="50%")> 
+          <p style="text-align: center;" data-aos="fade-up" >
+
+          <a href="#personalprojects"><img src="personalprojects.png" width="40%" height="30%"></a>
+          </p>
+  <!-- <h1 style="text-align: center;" data-aos="fade-left" class="aos-init">Personal Projects</h1> -->
+  <center>
+   <h1 style="text-align: center;" data-aos="fade-right" class="aos-init">Sunset Yellow</h1> 
+   <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8 aos-init" data-aos="fade-right">
+   <p><center> Sunset Yellow is a personal project of mine to use chat bots to check up on people's emotions and cheer them up. </p> 
+   <p><center> This will be a continuous project of mine as I believe the bots can grow as large as my capabilities rise.  </p> 
+   <p><center> So far, I have created Discord and Telegram Bots using python for this project. </p> 
+   </div>
+   <div class="card">
     <p style="text-align: center;" data-aos="fade-right" class="aos-init">
   <img src="telebot.jpg" class="img-responsive" alt="about image" width="100%" height="50%">
 
-      <h2 style="text-align: center;" data-aos="fade-left" class="aos-init">Telegram Bot</h2>
+  <p style="text-align: center;" data-aos="fade-left" class="aos-init">
+    <center>
+  <h2 style="text-align: center;" data-aos="fade-left" class="aos-init">Telegram Bot</h2>
   <p style="text-align: center;" data-aos="fade-right" class="aos-init">
     <h2 style="text-align: center;" data-aos="fade-left" class="aos-init">@SunsetYellow_bot</h2>
      <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8 aos-init" data-aos="fade-left">
@@ -275,9 +368,14 @@
     <p><center>3. Tap on the bot as shown in the picture above and start a conversation </p>
     <p><center>4. When you initiate a conversation, it will showcase the list of commands you can do.</p>
     <p><center>5. Type in /start or /help at any time to showcase the list of commands again </p>
+    <p style="text-align: center;" data-aos="fade-right" class="aos-init">
       <img src="https://img.icons8.com/ios/250/000000/source-code.png" height="30"><underneathtext><a href="https://github.com/Jassherrin/SunsetYellowBot" target="_blank">Sunset Yellow Telegram Bot Codes</a> </div>
  <p style="text-align: center;" data-aos="fade-right" class="aos-init">
+   </div>
+   <div class="card">
+      <p style="text-align: center;" data-aos="fade-right" class="aos-init">
  <img src="discordbot.jpg" class="img-responsive" alt="about image" width="100%" height="50%"> 
+ <center>
   
       <h2 style="text-align: center;" data-aos="fade-left" class="aos-init">Discord Bot</h2>
   <p style="text-align: center;" data-aos="fade-right" class="aos-init">
@@ -288,22 +386,28 @@
     <p><center>How to start:  </p>
     <p><center>1. Open Discord </p>
     <p><center>2. Create a new discord server </p>
-    <p><center>3. Go to this link: <a href="https://discord.com/api/oauth2/authorize?client_id=930309065157001286&permissions=534723946560&scope=bot" target="_blank">https://discord.com/api/oauth2/authorize?client_id=930309065157001286&permissions=534723946560&scope=bot</a>  </p>
+    <p><center>3. Go to this link: <a href="https://discord.com/api/oauth2/authorize?client_id=930309065157001286&permissions=534723946560&scope=bot" target="_blank">Discord auth</a>  </p>
     <p><center>4. Add the bot to the new server you just created</p>
     <p><center>5. Type in sad </p>
       </div>
  <p style="text-align: center;" data-aos="fade-right" class="aos-init">
 <img src="https://img.icons8.com/ios/250/000000/source-code.png" height="30"> <underneathtext><a href="https://github.com/Jassherrin/SunsetYellowDiscordBot" target="_blank">Sunset Yellow Discord Bot Codes</a> 
+</div>
   </div>
 </div>
  
 
 </underneathtext>
 </div>
-<div id="personalprojects">
+<div id="contact">
 <p style="text-align: center;" data-aos="fade-right" class="aos-init">
 <center>
-  <img src="https://img.icons8.com/ios/250/000000/handshake.png" height="50"> <h2>Find out more & Contact Details</h2>
+  <!-- <img src="https://img.icons8.com/ios/250/000000/handshake.png" height="50"> <h2>Find out more & Contact Details</h2> -->
+  <img src="empty.png" width="10%" height="50%")> 
+          <p style="text-align: center;" data-aos="fade-up" >
+
+          <a href="#contact"><img src="conact.png" width="40%" height="30%"></a>
+          </p>
 
 <p style="text-align: center;" data-aos="fade-right" class="aos-init">
 <img src="https://img.icons8.com/ios/250/000000/linkedin.png" height="25"><underneathtext>LinkedIn: <a href="https://www.linkedin.com/in/jassherrin-s-013836120/" target="_blank">My LinkedIn Profile</a> </underneathtext>
@@ -319,9 +423,9 @@
 
 
 <p style="text-align: center;" data-aos="fade-right" class="aos-init">
-<img src="https://img.icons8.com/ios/250/000000/resume.png" height="30"> <underneathtext>Resume:</underneathtext>
+<img src="https://img.icons8.com/ios/250/000000/resume.png" height="30"> <underneathtext>Resume: <a href="/Suther_David_Jassherrin_Resume.pdf" target="_blank">Resume</a></underneathtext>
 
-<button type="button"><a href="/Suther_David_Jassherrin_Resume">Resume</a></button>   </center>
+   </center>
 
 <p style="text-align: center;" data-aos="fade-right" class="aos-init">
 <img src="https://img.icons8.com/ios/250/000000/birthday-cake.png" height="30"> <underneathtext>Birthday: 24th December 2001</underneathtext>
@@ -330,12 +434,13 @@
 <img src="https://img.icons8.com/ios/250/000000/mailbox-closed-flag-up.png" height="30"> 
 <underneathtext>How to reach me: <a href="mailto:jassherrin@gmail.com" target="_blank">jassherrin@gmail.com</a> </underneathtext><p>
 
-<p>
+<p style="text-align: center;">
 <img src="https://img.icons8.com/ios/250/000000/dating-website.png" height="30"> <underneathtext>Icons from: <a href="https://www.notion.vip/icons/" target="_blank">https://www.notion.vip/icons/</a> </underneathtext>
 
-<p>
+<p style="text-align: center;">
 <img src="https://img.icons8.com/ios/250/000000/picture.png" height="30"> <underneathtext>Photos Edited with: Inshot</underneathtext>
 
+<p style="text-align: center;"> Thank you for visiting my website! </p>
 <p>
 </div>
   </body>
